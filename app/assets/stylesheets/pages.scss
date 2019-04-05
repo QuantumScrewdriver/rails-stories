@@ -55,6 +55,7 @@
     font-style: Poppins;
     padding: 0.5em;
     text-align: center;
+    color: black;
     margin: 1.5em;
     transition: 0.3s;
 }
@@ -134,4 +135,13 @@
     transition: transform .5s
                 cubic-bezier(0, .52, 0, 1);
     overflow: hidden;
+}
+
+//Thanks stuff
+.thanks {
+    background-image: image_url("thanks.jpg");
+    width: 100%;
+    min-height: 50vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }

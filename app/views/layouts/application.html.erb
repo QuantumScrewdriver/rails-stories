@@ -14,9 +14,6 @@
 
   <body>
     <%= react_component("Sidebar", {menu: asset_url("menu-black.svg"), 
-    home: button_to("Home", {}, {class: "menu-inner"}),
-    about: button_to("About", {}, {class: "menu-inner"}), 
-    contact: button_to("Contact Us", {}, {class: "menu-inner"}),
     hide: asset_url("close-black.svg")}) %>
     <%= yield %>
     <%= react_component("Footer") %>

@@ -1,0 +1,26 @@
+<div class="signup">
+    <div class="row">
+        <div class="offset-md-4 col-md-4 offset-sm-2 col-sm-8">
+            <p class="basic-text">
+                SIGN UP BELOW
+            </p>
+        </div>
+    </div>
+</div>
+<div class="form">
+    <%= form_with model: Signup.new do |form| %>
+        <p>
+            <%= form.label 'First Name' %><br>
+            <%= form.text_field :firstname %>
+        </p>
+    
+        <p>
+            <%= form.label :email %><br>
+            <%= form.text_area :email %>
+        </p>
+    
+        <p>
+            <%= form.submit class: 'form-btn' %>
+        </p>
+    <% end %>
+</div>

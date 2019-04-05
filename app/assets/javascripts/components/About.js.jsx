@@ -23,8 +23,8 @@ class About extends React.Component {
                         </p>
                     </div>
                     <div className="row">
-                        <div className="text-holder offset-md-4 col-md-4 offset-sm-2 col-sm-8">
-                            <button className="button-learn">Sign Up</button>
+                        <div className="button-holder offset-md-4 col-md-4 offset-sm-2 col-sm-8">
+                            <a className="button-learn" href="/signup">Sign Up Here</a>
                         </div>
                     </div>
                 </div>
