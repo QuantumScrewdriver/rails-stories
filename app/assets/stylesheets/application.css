@@ -18,23 +18,40 @@
     margin: 0px;
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    box-shadow: inset 0 0 10px #000000;
-    float: left;
-    width: 350px;
-    height: 100%;
+.menu-inner {
+    border: none;
+    background-color: white;
+    padding: 0px;
+    margin: 1em;
+    font-size: 18px;
 }
 
-#right {
-    width:100%;
-    z-index: 5;
-    position: fixed;
-    left: 0px;
-    height: 100%;
-}
-
-#menubar {
+.nav {
+    background: black;
     width: 100%;
+}
+  
+.nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 720px;
+}
+  
+.nav ul li,.nav ul li a {
+    color: white;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+    width: 140px;
+    transition: background .5s;
+}
+  
+.btn:hover, .nav ul li:hover, .nav ul li a:hover {
+    background: white;
+    cursor: pointer;
+    color: black !important;
+    transition: background .5s;
 }

@@ -1,30 +1,137 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.central {
+    width: 100%;
+}
+
 .main {
-    background-image: url("images/traveling1.jpg");
+    background-image: image_url("traveling1.jpg");
+    width: 100%;
+    min-height: 50vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .secondary {
-    background-image: url("images/mountain-traveling.jpg");
-    min-height: 0.5vh;
+    background-image: image_url("mountain-traveling.jpg");
+    height: 100vh;
 }
 
 .basic-text {
     background-color: rgba(255, 255, 255, 0.5);
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
-    margin: 1em;
+    margin-top: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
 
 .subheading {
-    font-size: 18px;
+    font-size: 24px;
     text-align: center;
 }
 
 .tagline {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
+}
+
+.button-holder {
+    text-align: center;
+    padding: 2em;
+}
+
+.text-holder {
+    text-align: center;
+}
+
+.button-learn {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    font-style: Poppins;
+    padding: 0.5em;
+    text-align: center;
+    margin: 1.5em;
+    transition: 0.3s;
+}
+
+.button-learn:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.body-part {
+    padding: 2em;
+}
+
+// SIDEBAR STUFF
+
+.header {
+    width: 100%;
+    padding: 0.5em;
+}
+
+.menu-holder {
+    border: none;
+    background-color: white;
+    padding: 0px;
+}
+
+.menu-hider {
+    border: none;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.menu-button {
+    height: 1em;
+    width: auto;
+}
+
+#menu {
+    width: 33vw;
+    height: 100vh;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: inset 0 0 10px #000000;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .5s
+                cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 1000;
+}
+
+#menu ul li {
+    margin: 2em 1em 2em 1em;
+    list-style-type: none;
+}
+
+#menu ul li a {
+    font-style: Poppins;
+    color: black;
+    font-size: 18px;
+}
+
+#menu.hide {
+    transform: translate3d(-33vw, 0, 0);
+    transition: transform .5s
+                cubic-bezier(0, .52, 0, 1);
+}
+   
+#menu.show {
+    transform: translate3d(0vw, 0, 0);
+    transition: transform .5s
+                cubic-bezier(0, .52, 0, 1);
+    overflow: hidden;
 }

@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Installs React for Rails
+# gem 'webpacker'
 gem 'react-rails'
 
 group :development, :test do
