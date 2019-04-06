@@ -1,1 +1,14 @@
 <%= react_component("Thanks") %>
+<p class="announce">Here are all the people who have already signed up!</p>
+<table style="width:100%;">
+    <tr>
+        <th>First Name</th>
+        <th>Email</th> 
+    </tr>
+    <% @signups.each do |s| %>
+        <tr>
+            <td><%= s.firstname %></td>
+            <td><%= s.email %></td>
+        </tr>
+    <% end %>
+</table>

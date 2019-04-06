@@ -3,5 +3,6 @@ class PagesController < ApplicationController
     end
 
     def thanks
+        @signups = Signup.order(created_at: :desc).all
     end
 end
